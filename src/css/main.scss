@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'base';
+
+#main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: $headerColor;
+}

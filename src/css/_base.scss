@@ -1,0 +1,60 @@
+$largeFont: 'Poppins', sans-serif;
+$smallFont: 'Raleway', sans-serif;
+
+$textColor: #303030;
+$headerColor: #800033;
+
+@mixin smallText {
+    font: 1em $smallFont;
+    color: $textColor;
+}
+
+h1 {
+    font: 2.2em $largeFont;
+    color: white;
+    margin-left: 10px;
+}
+
+h2 {
+    font: 1.6em $largeFont;
+    color: $textColor;
+    margin-bottom: 5px;
+}
+
+a, p, label, th, tr {
+    @include smallText;
+}
+
+a {
+    color: rgb(139, 101, 228);
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid lighten($textColor, 60);
+    padding: 10px;
+    width: 70%;
+    @include smallText;
+    margin-bottom: 20px;
+}
+
+button, #button {
+    @include smallText;
+    background-color: lighten($textColor, 65);
+    border: none;
+    padding: 10px;
+    width: 50%;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.smallBtn {
+    width: 100%;
+}

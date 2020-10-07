@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurser</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>DT173G</h1>
+    </header>
+    <div id="main">
+        <h2>Genomförda Kurser</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kursnamn</th>
+                    <th>Kurskod</th>
+                    <th>Progression</th>
+                    <th>Kursplan</th>
+                    <th>Radera</th>
+                    <th>Uppdatera</th>
+                </tr>
+            </thead>
+            <tbody id="courseList">
+            </tbody>
+        </table>
+        <h2>Lägg till kurs</h2>
+        <form onsubmit="addCourse()">
+            <label for="name">Kursnamn: </label><br />
+            <input type="text" name="name" id="name"><br />
+            <label for="code">Kurskod: </label><br />
+            <input type="text" name="code" id="code"><br />
+            <label for="progression">Progression: </label><br />
+            <input type="text" name="progression" id="progression"><br />
+            <label for="syllabus">Kursplan: </label><br />
+            <input type="text" name="syllabus" id="syllabus"><br />
+            <input type="submit" value="Lägg till" id="button">
+        </form>
+        <div id="updateBtn"></div>
+    </div>
+</body>
+</html>
